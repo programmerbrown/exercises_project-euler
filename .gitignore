@@ -1,1 +1,5 @@
+# Exclude compiled Java files
 *.class
+
+# Exclude .vscode file
+.vscode
