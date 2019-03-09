@@ -11,25 +11,18 @@ public class LargestPalindromeProduct {
     }
 
     public static void main(String[] args) {
-        boolean found = false;
-        int num = 0;
+        int maxPalindrome = 0;
 
-        List<Integer> palindromes = new ArrayList<>();
-
-        outerloop:
         for(int i=999; i>=100; i--) {
             for(int j=999; j>=100; j--) {
-                num = i * j;
-                if(LargestPalindromeProduct.isPalindrome(String.valueOf(num))) {
-                    palindromes.add(i*j);
+                if(LargestPalindromeProduct.isPalindrome(String.valueOf(i*j)) && (i*j) > maxPalindrome) {
+                    maxPalindrome = i*j;
                 }
             }
         }
         
-        OptionalInt maxPalindrome = palindromes.stream().mapToInt(i -> i).max();
-
-        if(maxPalindrome.isPresent()) {
-            System.out.println("The largest palindrome is : " + maxPalindrome.getAsInt());
+        if(maxPalindrome > 0) {
+            System.out.println("The largest palindrome is : " + maxPalindrome);
         } else {
             System.out.println("Did not find a palindrome.");
         }
