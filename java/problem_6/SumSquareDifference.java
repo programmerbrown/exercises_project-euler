@@ -9,7 +9,12 @@ public class SumSquareDifference {
         return squareOfSum * squareOfSum - sumOfSquares;
     }
     public static void main(String[] args) {
-        System.out.println("Difference between square of sums and sum of squares is : " 
-                + SumSquareDifference.diff(Integer.parseInt(args[0])));
+
+        try {
+            System.out.println("Difference between square of sums and sum of squares is : " 
+                    + SumSquareDifference.diff(Integer.parseInt(args[0])));
+        } catch(Exception e) {
+            System.out.println("Make sure you provide a number value as an argument when running this program.");
+        }
     }
 }
