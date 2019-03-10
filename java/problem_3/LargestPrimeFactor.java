@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class LargestPrimeFactor {
     public static void main(String[] args) {
-        // LINK: https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
         long numberToFactor = 600851475143L;
         ArrayList<Long> factors = new ArrayList<>();
 
