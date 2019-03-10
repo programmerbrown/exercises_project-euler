@@ -1,20 +1,20 @@
 public class EvenFibonacciNumbers {
     public static void main(String[] args) {
-            long previous = 1;
-            long current = 2;
-            long temp = 0;
-            long sum = 0;
+            long previousFibNum = 1;
+            long currentFibNum = 2;
+            long tempNum = 0;
+            long sumOfFibNums = 0;
 
-            while(current < 4000000) {
-                if (current%2 == 0) {
-                    sum += current;
+            while(currentFibNum < 4000000) {
+                if (currentFibNum%2 == 0) {
+                    sumOfFibNums += currentFibNum;
                 }
 
-                temp = current;
-                current = current + previous;
-                previous = temp;
+                tempNum = currentFibNum;
+                currentFibNum = currentFibNum + previousFibNum;
+                previousFibNum = tempNum;
             }
 
-            System.out.println("answer: " + sum);
+            System.out.println("answer: " + sumOfFibNums);
     }
 }
