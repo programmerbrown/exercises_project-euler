@@ -19,7 +19,11 @@ public class SpecialPythagoreanTriplet {
         }
 
         if(a != 0) {
-            System.out.println("The Pythagorean triple is : a = " + a + ", b = " + b + ", c = " + c + ", product = " + (a*b*c));
+            System.out.println("The Pythagorean triple is : "
+            + "a = " + a + 
+            ", b = " + b + 
+            ", c = " + c + 
+            ", product = " + (a*b*c));
         } else {
             System.out.println("A Pythagorean triple was not found.");
         }
