@@ -1,9 +1,3 @@
-# Exclude compiled Java files
-*.class
-
-# Exclude .vscode file
-.vscode
-
 # The directory Mix will write compiled artifacts to.
 /_build/
 
@@ -26,5 +20,5 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-problem_2-*.tar
 problem_12-*.tar
+
